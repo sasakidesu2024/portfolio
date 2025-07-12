@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+
+/* profileタイトルの設定 */
+h2 {
+    margin-bottom: 100px;
+    font-size: 5.0rem;
+    font-family: "Playwrite AU VIC", cursive;
+    text-align: center;
+}
+
+.inner p {
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.second {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* 自分イラスト */
+.watashi {
+    position: relative;
+    z-index: auto;
+    width: 260px;
+    height: auto;
+    margin: 50px auto;
+}
+
+.watashi img {
+    border-radius: 50%;
+    border-color: rgb(123, 255, 0);
+    box-shadow: 0 0 15px rgb(240, 29, 240);
+    border-width: 5px;
+    padding: 5px;
+    transition: 0.7s;
+}
+
+/* 私ちょっと大きくする */
+.watashi :hover {
+    transform: scale(1.3, 1.3);
+    /* transition: 1s all; */
+}
+
+.watashi .konniti {
+    position: absolute;
+    width: 200px;
+    /* 吹き出しの幅 */
+    height: 40px;
+    /* 吹き出しの高さ */
+    top: 250px;
+    /* 画像と三角形の高さをプラスした値 */
+    left: 0px;
+    border-radius: 35px;
+    background-color: #ff0;
+    display: none;
+    text-align: center;
+
+}
+
+.watashi .konniti:after {
+    /* 三角形を作成 */
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -32px;
+    /* 三角形の高さを２倍した値 */
+    left: 32px;
+    border: 16px solid transparent;
+    border-bottom: 16px solid #ff0;
+}
+
+.watashi .text {
+    font-size: 16px;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    color: #000;
+}
+
+.watashi:hover .konniti {
+    z-index: 2;
+    display: block;
+}
+
+/* history & strengths のタイトル*/
+
+h3 {
+    font-size: 2.5rem;
+    font-family: "Playwrite AU VIC", cursive;
+    font-weight: 700;
+}
+
+/*  history & strengths の文字枠 とピンク線延びる*/
+
+.ttl_box {
+    /* ｲﾝﾗｲﾝで文字の一部とする */
+    display: inline;
+    position: relative;
+}
+
+.ttl_box::before {
+    content: "";
+    /* width: 0; */
+    /* ラインの高さ/位置の設定 */
+    height: 40px;
+    /* display: block; */
+    background: linear-gradient(transparent 60%, rgb(248, 132, 200) 90%);
+    position: absolute;
+    /* top: -5px; */
+    left: 0;
+    z-index: -2;
+    animation: underAnime 4s forwards ease-out infinite;
+}
+
+/* backgroundの文枠 */
+.text_box {
+    margin: 40px 0 40px;
+    padding: 0.5em 1em;
+}
+
+@keyframes underAnime {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/*strengths3点 */
+
+.card dt {
+    font-size: 1.8;
+    margin: 30px 0 10px;
+    font-weight: 700px;
+    padding: 0.5em 1em;
+    color: #082a5f;
+    background: #dfebf8;
+    border-bottom: solid 6px #619af7;
+    border-radius: 9px;
+    display: inline-block;
+}
+
+.card dd {
+    line-height: 2;
+    letter-spacing: 2px;
+    /* margin-left: 20px; */
+}

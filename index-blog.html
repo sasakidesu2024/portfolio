@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="ポートフォリオ">
+    <meta name="keywords" content="ポートフォリオ,WEBデザイン,コーディング">
+
+    <title>blog一覧</title>
+
+    <!--リセットCSS-->
+    <link rel="stylesheet" href="css/destyle.css">
+
+    <!-- Googleフォントの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- "Zen Kaku Gothic New", sans-serifの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- "Noto Sans JP", sans-serif;の読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- "Playwrite AU VIC", cursive;　の読み込み  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+
+
+    <!-- 共通CSSの読み込み -->
+    <link rel="stylesheet" href="css/common.css">
+    <!--blogページcssの読み込み-->
+    <link rel="stylesheet" href="css/blog.css">
+    <!-- otherpageの共通 -->
+    <link rel="stylesheet" href="css/ohtercommon.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <h1 class="logo">
+                <!-- トップに飛ぶロゴ-->
+                <a href="index.html">
+                    <img src="img/logo_outline.png" alt="ヘッダーロゴ">
+                </a>
+            </h1>
+
+            <!-- hamberger ボタン -->
+            <div class="hamburger pc-none">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+        </div>
+
+        <!-- hamberger メニュー -->
+        <ul class="slide-menu pc-none">
+            <li><a href="index.html">Top</a></li>
+            <li><a href="index-about.html">About</a></li>
+            <li><a href="index-works.html">Works</a></li>
+            <li><a href="index-blog.html">Blog</a></li>
+            <li><a href="index-contact.html">Contact</a></li>
+        </ul>
+
+        <!-- PC用ナビボタン-->
+        <nav class="h_nav sp-none">
+            <ul class="menu">
+                <li><a href="index-about.html">About</a></li>
+                <li><a href="index-works.html">Works</a></li>
+                <li><a href="index-blog.html">Blog</a></li>
+                <li><a href="index-contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="inner">
+            <!-- トップページに戻るボタン -->
+            <p id="page-top"><a href="#">↑<br>TOP</a></p>
+            <section class="blog">
+
+                <h2 class="ttl_box">Blog</h2>
+                <div class="message">
+                    <p>
+                        徳島生活と職業訓練の日々について <br class="tablet-none"> blogページを作ってみました。<br>
+                        ※クリックで詳細ページにうつります。
+                    </p>
+                </div>
+
+                <ul class="blog_list">
+                    <li>
+                        <a href="index-bsingle.html" class="card huwatto">
+                            <div class="photo">
+                                <img src="img/blog/berger.jpeg" alt="鳴門のバーガー屋さん">
+                            </div>
+                            <div class="textdesu">
+                                <p><time datetime="2024-6-1">2024年6月1日<time></p>
+                                <h3>鳴門でハンバーガー</h3>
+                                <div class="expm">
+                                    <p>
+                                        兵庫県から鳴門に越してこられたハンバーガー屋さんで久しぶりにおしゃれなものを食べました。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="card fadeup">
+                            <div class="photo">
+                                <img src="img/blog/softcream.jpg" alt="ベランダ">
+                            </div>
+                            <div class="textdesu">
+                                <p><time datetime="2024-7-17">2024年7月17日<time></p>
+                                <h3>QLIP投稿記事</h3>
+                                <div class="expm">
+                                    <p>
+                                        Java入門編の授業が始まり、まだ1週間ですが徐々に思考が追いつかなくなってきています。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="card fadeup">
+                            <div class="photo">
+                                <img src="img/blog/yuuhi.jpeg" alt="ゴルフの練習">
+                            </div>
+                            <div class="textdesu">
+                                <p><time datetime="2024-8-1">2024年8月1日<time></p>
+                                <h3>趣味はゴルフ</h3>
+                                <div class="expm">
+                                    <p>
+                                        香川のゴルフ打ちっぱなしに行ってきました。夕暮れ時とてもきれいな景色、日本じゃないみたい。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="card fadeup">
+                            <div class="photo">
+                                <img src="img/blog/beranda1.jpeg" alt="ベランダのプランター">
+                            </div>
+                            <div class="textdesu">
+                                <p><time datetime="2024-8-28">2024年8月28日<time></p>
+                                <h3>QLIP投稿記事</h3>
+                                <div class="expm">
+                                    <p>
+                                        ITパスポートから始まり、Java、illustration、Photoshop、htmlにCSS。怒涛の3カ月でした。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="card fadeup">
+                            <div class="photo">
+                                <img src="img/blog/xd3.png" alt="ワイヤーフレーム">
+                            </div>
+                            <div class="textdesu">
+                                <p><time datetime="2024-9-5">2024年9月5日<time></p>
+                                <h3>初figmaとデザインカンプ</h3>
+                                <div class="expm">
+                                    <p>
+                                    授業ではfigma、自分のポートフォリオではxdでワイヤーフレームとデザインカンプ作りました。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="card fadeup">
+                            <div class="photo">
+                                <img src="img/blog/homepc.jpeg" alt="自宅のパソコン">
+                            </div>
+                            <div class="textdesu">
+                                <p><time datetime="2024-10-18">2024年10月18日<time></p>
+                                <h3>QLIP投稿記事</h3>
+                                <div class="expm">
+                                    <p>
+                                        6月から始まり、あっという間にPHPの最終コーナーです。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+        <!-- ページネーション 
+        <ul class="pagination">
+            <li class="disabled">
+                <a href="#"><i class="fas fa-angle-left"></i></a>
+            </li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li>
+                <a href="#"><i class="fas fa-angle-right"></i></a>
+            </li>
+        </ul>
+    </main>
+    -->
+
+    <footer>
+        <!-- 雲ふわふわ -->
+        <div class="huwahuwa">
+            <ul class="huwahuwa">
+                <li class="kumo">
+                    <img src="img/common/kumo.png" alt="雲">
+                </li>
+                <li class="kumo">
+                    <img src="img/common/kumo.png" alt="雲">
+                </li>
+                <li class="kumo">
+                    <img src="img/common/kumo.png" alt="雲">
+                </li>
+                <ul>
+        </div>
+
+        <!-- 鰹と鳴門大橋 -->
+        <div class="ugoku">
+            <div class="katuotowatashi">
+                <img src="img/common/katutowate.png" alt="鰹と私">
+            </div>
+            <ul class="katuotati">
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+            </ul>
+            <ul class="katuotati">
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+            </ul>
+            <ul class="katuotati">
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+            </ul>
+            <ul class="katuotati">
+                <li class="katuo">
+                    <img src="img/common/katuode.png" alt="鰹">
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="img/common/narutobridge2.jpg" alt="">
+        </div>
+
+        <!-- コピーライト -->
+        <p class="f-copy">
+            <small>
+                Copyright © sasakidesu All Rights Reserved.
+            </small>
+        </p>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/code.js"></script>
+</body>
+
+</html>
