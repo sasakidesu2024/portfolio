@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="ポートフォリオ">
+    <meta name="keywords" content="ポートフォリオ,WEBデザイン,コーディング">
+
+    <title>ポートフォリオ</title>
+
+    <!--リセットCSS-->
+    <link rel="stylesheet" href="css/destyle.css">
+
+    <!-- Googleフォントの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- "Zen Kaku Gothic New", sans-serifの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- "Noto Sans JP", sans-serif;の読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- "Playwrite AU VIC", cursive;　の読み込み  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+
+
+    <!-- 共通CSSの読み込み -->
+    <link rel="stylesheet" href="css/common.css">
+
+    <!--トップページcssの読み込み-->
+    <link rel="stylesheet" href="css/top.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <h1 class="logo">
+                <!-- トップに飛ぶロゴ-->
+                <a href="index.html">
+                    <img src="img/logo_outline.png" alt="ヘッダーロゴ">
+                </a>
+            </h1>
+
+            <!-- hamberger ボタン -->
+            <div class="hamburger pc-none">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <!-- hamberger メニュー -->
+            <ul class="slide-menu pc-none">
+                <li><a href="index.html">Top</a></li>
+                <li><a href="index-about.html">About</a></li>
+                <li><a href="index-works.html">Works</a></li>
+                <li><a href="index-blog.html">Blog</a></li>
+                <li><a href="index-contact.html">Contact</a></li>
+            </ul>
+
+            <!-- PC用ナビボタン-->
+            <nav class="h_nav sp-none">
+                <ul class="menu">
+                    <li><a href="index-about.html">About</a></li>
+                    <li><a href="index-works.html">Works</a></li>
+                    <li><a href="index-blog.html">Blog</a></li>
+                    <li><a href="index-contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <!-- トップページに戻るボタン -->
+        <p id="page-top"><a href="#">↑<br>TOP</a></p>
+
+        <!--キービジュアル-->
+        <div class="kv sp-none">
+            <img src="img/top/kv_pc2.jpg" alt="パソコンキービジュアル">
+        </div>
+        <div class="kv pc-none">
+            <img src="img/top/kv_sp914.jpg" alt="モバイルキービジュアル">
+        </div>
+        <div class="inner">
+            <!--About-->
+            <section class="awb proflie">
+
+                <!--見出し-->
+                <h2 class="ttl_box">About</h2>
+                <!--サブコメント-->
+                <div class="exp">
+                    <p class="text">
+                        広告代理店で営業事務等を約8年<br class="tablet-none"/>
+                        保険代理店で営業を約17年<br/>
+                        職業訓練にて半年、下記スキルを学びました
+                    </p>
+                </div>
+
+
+                <!--学習中スキル一覧-->
+                <ul class="awb_list about ">
+                    <li>
+                        <article class="skill fadeup">
+                            <h3>デザイン</h3>
+                            <img src="img/top/icon_design.jpg" alt="デザインマーク">
+                            <p>
+                                Illustrator
+                                <br>
+                                Photoshop
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="skill fadeup">
+                            <h3>コーディング</h3>
+                            <img src="img/top/icon_pc.jpg" alt="コーディングマーク">
+                            <p>
+                                Java,Html,Css,Javascript
+                                <br>
+                                PHP,WordPress
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+
+                <!--moreボタン-->
+                <a href="index-about.html" class="more">profileへ</a>
+
+            </section>
+
+            <!--Works-->
+            <section class="awb">
+
+                <h2 class="ttl_box">Works</h2>
+
+                <!--works紹介-->
+                <ul class="awb_list works">
+                    <li>
+                        <div class="card_works fadeup">
+                            <a href="index-works.html">
+                                <img src="img/works/syuusei_hasu.jpg" alt="蓮と私">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_works fadeup">
+                            <a href="index-works.html">
+                                <img src="img/symbol__mark2.jpg" alt="シンボルマーク">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card_works fadeup">
+                            <a href="index-works.html">
+                                <img src="img/works/awaodori.jpg" alt="ロゴマーク">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="botton">
+                    <!-- worksページに飛ぶボタン-->
+                    <a href="index-works.html">
+                        <img src="img/works/readmore3.png" alt="もっと見るボタン">
+                    </a>
+                </div>
+            </section>
+
+            <!--Blog-->
+            <section class="awb">
+
+                <h2 class="ttl_box">Blog</h2>
+
+                <ul class="awb_list blog">
+                    <li>
+                        <div class="photo fadeup">
+                            <a href="index-blog.html">
+                                <div>
+                                    <img src="img/blog/xd3.png" alt="yukaちゃん">
+                                </div>
+                                <p>
+                                    figmaでワイヤーフレーム習いましたが、自分のポートフォリオでは年間契約しているAdobeのxdでトライすることにしました。figmaは２日間でワイヤーフレームとデザインカンプを学び、xdはまさに独学です。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="photo fadeup">
+                            <a href="index-blog.html">
+                                <div>
+                                    <img src="img/blog/berger.jpeg" alt="鳴門でハンバーガー">
+                                </div>
+                                <p>
+                                    兵庫県から鳴門に越してこられたハンバーガー屋さんで久しぶりにおしゃれなものを食べました。
+                                </p>
+                            </a>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="photo fadeup">
+                            <a href="index-blog.html">
+                                <div>
+                                    <img src="img/blog/yuuhi.jpeg" alt="ゴルフの練習">
+                                </div>
+                                <p>
+                                    香川のゴルフ打ちっぱなしに行ってきました。夕暮れ時とてもきれいな景色、日本じゃないみたい。
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="botton">
+                    <!-- blogページに飛ぶボタン-->
+                    <a href="index-blog.html">
+                        <img src="img/works/readmore2.png" alt="もっと見るボタン">
+                    </a>
+                </div>
+
+            </section>
+
+    </main>
+
+    <footer>
+        <!-- コピーライト -->
+        <p class="f-copy">
+            <small>
+                Copyright © sasakidesu All Rights Reserved.
+            </small>
+        </p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/code.js"></script>
+</body>
+
+</html>

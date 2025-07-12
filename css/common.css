@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/* ==================== */
+/* base */
+/* ==================== */
+
+html {
+    /* remの基準 */
+    font-size: 10px;
+    color: #333;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.inner {
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0 auto 40px;
+    padding: 50px 20px 0;
+    position: relative; 
+}
+
+@media screen and (min-width:900px) {
+    .inner {
+        padding: 50px 0px 20px;
+    }
+}
+
+
+/* ヘッダーの設定 */
+header {
+    /* ヘッダーを中央位置＆固定 */
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    /* 上下の固定位置を上から0pxにする */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /*かくれたハンバーガーメニュー用*/
+    position: fixed;
+    z-index: 99;
+
+}
+
+/* ヘッダーを固定にしたためヘッダー分の余白を作る */
+main {
+    margin-top: 60px;
+}
+
+/*ロゴの横サイズ、左余白設定*/
+.logo {
+    width: 160px;
+    margin: 20px 0px 20px;
+    padding-left: 20px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    display: block;
+}
+
+/*sp時ナビと㍶用viewを隠す */
+.sp-none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ---------- */
+/* pc */
+/* 500px以上でスマホビジュアルとメニューを隠す、PCビジュアルとナビ出す*/
+
+@media (width>=500px) {
+    .sp-none {
+        display: block;
+    }
+
+    .pc-none {
+        display: none;
+    }
+}
+
+@media (width>=750px) {
+
+    .tablet-none {
+        display: none;
+    }
+
+}
+/*---- ---------------------------- */
+/*---- ハンバーガーメニューの指示---- */
+/*---- --------------------------- */
+
+
+/* 画面に出ているはみ出たメニューを隠す */
+body {
+    overflow-x: hidden;
+}
+
+.hamburger {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: blue;
+    z-index: 100;
+}
+
+.hamburger span:first-of-type {
+    /* ハンバーガーメニューの1番目の線 */
+    top: 0;
+}
+
+.hamburger span:nth-of-type(2) {
+    /* ハンバーガーメニューの2番目の線 */
+    top: 50%;
+}
+
+.hamburger span:last-of-type {
+    /* ハンバーガーメニューの3番目の線 */
+    top: 100%;
+}
+
+.slide-menu {
+    background-color: rgba(41, 110, 214, 0.8);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    transform: translateX(100%);
+    /* X軸は縦軸　100％で画面右側 height: 100vh;　※-100％で画面左側 */
+    transition: .5s;
+}
+
+.slide-menu li {
+    margin-top: 40px;
+    color: #fff;
+    line-height: 200%;
+    padding-left: 120px;
+    font-size: 3rem;
+    font-family: "Playwrite AU VIC", cursive;
+    font-weight: bold;
+}
+
+
+/* ハンバーガーを×にする */
+
+.hamburger.active span:first-of-type {
+    /* ハンバーガーメニューの1番目の線 */
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+/* 透明にする */
+/* ハンバーガーメニューの2番目の線 */
+.hamburger.active span:nth-of-type(2) {
+
+    opacity: 0;
+}
+
+.hamburger.active span:last-of-type {
+    /* ハンバーガーメニューの3番目の線 */
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/* メニューを出す */
+.slide-menu.active {
+    transform: translateX(0);
+}
+
+.f-copy {
+    text-align: center;
+    color: blue;
+    font-weight: 800;
+}
+
+.f-copy small {
+    /* 14px */
+    font-size: 1.4rem;
+}
+
+@media(width>=500px) {
+
+    /* ヘッダー固定したため指定 */
+    header {
+        height: 152px;
+        max-width: 960px;
+    }
+
+    /* ヘッダーを固定にしたためヘッダー分の余白を作る */
+    main {
+        margin-top: 152px;
+    }
+
+    .logo {
+        width: 377px;
+    }
+
+
+    /* これがないとkv以下が上に上がってしまう */
+    .kv img {
+        height: 100%;
+    }
+
+    /* 縦並びを横並びにする　タグ間40pxにする */
+    .h_nav ul {
+        display: flex;
+        gap: 40px;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    .h_nav a {
+        /* 文字を18px、太字 */
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+
+        /* navの内枠と下線の動き設定 */
+        border-bottom: 2px solid transparent;
+        transition: 0.6s;
+    }
+
+    /* nav文字に触れる文字と下線がブルー */
+    .h_nav a:hover {
+        color: #3FA9F5;
+        border-bottom: 2px solid #3FA9F5;
+    }
+
+}
+
+/* トップに戻る     */
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+    line-height: 1;
+    z-index: 99;
+
+}
+
+/* トップに戻る　文字 */
+#page-top a {
+    background: #0f31f1;
+    text-decoration: none;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    padding: 15px 5px;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: all .6s ease;
+}
+
+#page-top a:hover {
+    letter-spacing: .3rem;
+    box-shadow: 5px 5px 50px yellow;
+}
+
+@media(width<=500px) {
+    .header-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+/* ふわっと絵がでる（１行目） 
+.huwatto {
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translatey(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+    */
+
+.fadeup {
+    opacity: 0;
+    transition-duration: .9s;
+    transform: translateY(20px);
+}
+
+.fadeup.active {
+    opacity: 1;
+    transform: translateY(0px);
+}

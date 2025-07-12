@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+main {
+    /* font-family: "Noto Serif JP", serif; */
+    padding: 50px 20px 0px 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    overflow: hidden;
+    /* background-image: url(../img2/narutooohashi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-top: 100px;
+}
+
+.huwahuwa {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* background-color: aqua; */
+}
+
+.kumo {
+    margin: 0 20px;
+    animation: floating-y 1.8s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floating-y {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(10%);
+    }
+}
+
+.kumo {
+    width: 70px;
+}
+
+.ugoku {
+    display: flex;
+    align-items: center;
+    animation-name: ugoku;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.katuotowatashi {
+    width: 150px;
+}
+
+.katuo {
+    width: 70px;
+}
+
+@keyframes ugoku {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@media (width>=500px) {
+
+    .katuotowatashi {
+        width: 200px;
+    }
+
+    .katuo {
+        width: 100px
+    }
+
+    .kumo {
+        width: 200px;
+    }
+
+    .kumo {
+        margin: 0 30px;
+    }
+
+    .ugoku {
+        animation-duration: 13s;
+    }
+
+}
+
+@media (width>=800px) {
+
+    .kumo {
+        margin: 0 60px;
+    }
+
+}

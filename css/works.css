@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* worksタイトルの設定 */
+h2 {
+    margin-bottom: 20px;
+    font-size: 5.0rem;
+    font-family: "Playwrite AU VIC", cursive;
+    text-align: center;
+}
+
+/* worksタイトル下のコメント*/
+.message {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.massage ::first-line {
+    font-size: 120%;
+}
+
+/* 幅に合わせて画像の配置調整 */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.works img {
+    height: 300px;
+    padding: 10px;
+    object-fit: scale-down;
+    border: 20px ridge #f3de99;
+    background-color: white;
+}
+
+.card_works {
+    /* margin-bottom: 30px; */
+    max-width: 300px;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 2.0rem;
+    margin: 10px 0;
+    font-weight: 500;
+    text-align: center;
+    color: blue;
+}
+
+.inner p {
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+/* pc */
+@media(width>=500px) {
+
+    /* ふわっと絵がでる（１行目） */
+    .fuwatto {
+        animation-name: fadein;
+        animation-duration: 3s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+            transform: translatey(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translatey(0);
+        }
+    }
+}
+
+@media(width<=500px) {
+
+    /* ふわっと絵がでる（１行目） */
+    .huwatto {
+        animation-name: fadein;
+        animation-duration: 3s;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+            transform: translatey(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translatey(0);
+        }
+    }
+}
+
+/* JSでスクロールしたら下記の動作 */
+/*２行目以降　下から上に10px動きながら0.9秒かけて出現させる */
+
+.fadeup {
+    opacity: 0;
+    transition-duration: .7s;
+    transform: translateY(15px);
+}
+
+.fadeup.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.delay01 {
+    transition-delay: .3s;
+}
+
+.delay02 {
+    transition-delay: .4s;
+}
+
+.delay03 {
+    transition-delay: .5s;
+}

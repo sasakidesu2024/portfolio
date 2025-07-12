@@ -1,0 +1,197 @@
+h2 {
+    margin-bottom: 20px;
+    font-size: 5.0rem;
+    font-family: "Playwrite AU VIC", cursive;
+    text-align: center;
+}
+
+/* worksタイトル下のコメント*/
+.message {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* contactページの囲みについて */
+
+.form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        margin-top: 40px;
+    }
+}
+
+/* 項目それぞれの囲み */
+
+.item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .item {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-wrap: wrap;
+    }
+}
+
+.item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+}
+
+/* 入力上の項目名 */
+
+.label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+    .label {
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+
+.label.msg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .label.msg {
+        margin-top: 0;
+    }
+}
+
+
+
+.label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+    .label-Required {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 32px;
+        font-size: 10px;
+    }
+}
+
+/* 入力欄 */
+
+.input {
+    border: 1px solid #5377ee;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: rgb(209, 234, 248);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+    .input {
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+
+/* お問い合わせ記入欄 */
+
+.textarea {
+    border: 1px solid #5377ee;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: rgb(209, 234, 248);
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+    .textarea {
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+
+/* クリア送信ボタン */
+.clear_or_mail {
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.clear_or_mail input {
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 3px rgba(25, 25, 112, 1);
+    /* appearance: none; */
+}
+
+.clear_or_mail input:hover {
+    border: solid 1px blue;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: blue;
+    transform: translateY(3px);
+    box-shadow: 0px 5px 3px rgba(0, 0, 128, 0);
+    transition: 0.2s ease-in-out;
+}
+
+
+.clear_btn {
+    background-color: #619af7;
+    margin-right: 25px;
+}
+
+.mail_btn {
+    background-color: darkorange;
+}
