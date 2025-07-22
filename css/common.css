@@ -315,3 +315,20 @@ body {
     opacity: 1;
     transform: translateY(0px);
 }
+
+
+/*練習Evemt*/
+
+.ttl_ohter{
+    margin-bottom: 100px;
+}
+
+.chirashi img{
+    width: 80%;
+    
+}
+
+.event{
+
+    text-align: center;
+}

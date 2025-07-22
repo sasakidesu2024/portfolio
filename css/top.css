@@ -190,18 +190,26 @@ section {
     footer {
         padding: 10px 0 10px;
     }
+
+    .mmap{
+        margin-bottom: 30px;
+    }
 }
 
 
 .map{
     position: relative;
-    padding-top: 60%;
+    padding-top: 50%;
+     margin-bottom: 50px;
+    
 }
 .map iframe{
     position: absolute;
     left: 0;
     top: 0;
+   
     
+
 /*親要素の幅と高さにフィットさせる*/
     width: 100%;
     height: 100%;
