@@ -25,6 +25,14 @@ html {
     }
 }
 
+h2 {
+    margin-bottom: 100px;
+    font-size: 5.0rem;
+    font-family: "Playwrite AU VIC", cursive;
+    text-align: center;/
+}
+
+
 
 /* ヘッダーの設定 */
 header {

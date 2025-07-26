@@ -4,9 +4,9 @@
 /* profileタイトルの設定 */
 h2 {
     margin-bottom: 100px;
-    font-size: 5.0rem;
+   /*ont-size: 5.0rem;
     font-family: "Playwrite AU VIC", cursive;
-    text-align: center;
+    text-align: center;*/
 }
 
 .inner p {
