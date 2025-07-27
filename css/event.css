@@ -2,10 +2,10 @@
 
 /*----------------練習Eventpage-----------------------------*/
 
-.ttl_ohter{
-    margin-bottom: 100px;
+/*.ttl_ohter{
+    margin-bottom: 50px;
 }
-
+*/
 .event_info{
     max-width: 500px;
     margin: 0 auto;
@@ -19,4 +19,14 @@
     background-color: antiquewhite;
     padding: 10px 0;
     margin-bottom: 30px;
+}
+
+dd{
+   line-height: 1.5; 
+
+}
+
+dt{
+    margin:10px 0 ;
+    
 }

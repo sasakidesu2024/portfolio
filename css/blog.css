@@ -1,12 +1,6 @@
 @charset "utf-8";
 
 /* blogタイトルの設定 */
-h2 {
-    margin-bottom: 20px;
-    /*nt-size: 5.0rem;
-    font-family: "Playwrite AU VIC", cursive;
-    text-align: center;*/
-}
 
 /* worksタイトル下のコメント*/
 .message {
