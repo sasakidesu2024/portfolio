@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*----------------練習Eventpage-----------------------------*/
+
+.ttl_ohter{
+    margin-bottom: 100px;
+}
+
+.event_info{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.tirashi img{
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+.info_title{
+    background-color: antiquewhite;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
