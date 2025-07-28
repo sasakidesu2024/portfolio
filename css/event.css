@@ -28,11 +28,12 @@ h3 {
     
 /*------pc-----*/
 
-.event_info{
+.event_container{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
+  
+    gap: 20px;
 }
-
 
 /*---------event_detail 指示----------*/
 .event_detail{
