@@ -5,8 +5,8 @@ body {
 }
 
 /* worksタイトルの設定 */
-h2 {
-    margin-bottom: 20px;
+.ttl_ohter {
+    margin:  50px;
   }
 
 /* worksタイトル下のコメント*/
@@ -17,16 +17,8 @@ h2 {
 
 /* 幅に合わせて画像の配置調整 */
 
-.works {
-    text-align: center;
-}
-
 .works img {
    
-    /* object-fit: cover; */
-    object-fit: scale-down;
-    margin-top: 30px;
-    margin-bottom: 30px;
     border: rgb(196, 232, 247) solid;
 }
 
@@ -38,16 +30,13 @@ h2 {
 }
 
 /* pc */
-@media(width>=500px) {
-    .works img {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .inner p {
-        margin-bottom: 50px;
-    }
+.works_detail{
+    max-width: 600px;
+    margin: 0 auto;
 }
+
+
+
 
 /* ふわっと絵がでる（１行目） */
 .huwatto {
