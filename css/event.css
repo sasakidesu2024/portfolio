@@ -80,9 +80,24 @@ h3 {
     gap: 20px;
 }
 
+
 /*---------event_detail 指示----------*/
 .event_detail{
-    max-width: 600px;
+       
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+@media screen and (max-width:500px) {
+    .info_card{
+max-width: 45%;
+    }
+   
+}
+.info_card{
+    max-width: 500px;
     margin: 0 auto;
 }
 
