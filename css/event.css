@@ -21,10 +21,11 @@ h3 {
     max-width: 350px;
     margin: 0 auto 50px;
     border: solid black;
-    border-radius: 15px 15px 0 0;      
+    border-radius: 15px 15px 0 0;   
+       
 }
 
-.tirashi{
+.info_explain{
     padding: 10px ;
 }
 
