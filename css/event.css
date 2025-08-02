@@ -19,6 +19,7 @@ h3 {
 
 .event_info li{
     max-width: 450px;
+  
     margin: 0 auto 50px;
     border: solid black;
     border-radius: 15px 15px 0 0;      
@@ -32,6 +33,13 @@ h3 {
     padding: 10px;
 }
 
+.info_text dt{
+    background-color: #ffc3c3;
+    line-height: 2em;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 15px;
+}
  /* カード内もっとmi
  るボタン*/
 .button_solid017{
