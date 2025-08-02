@@ -34,11 +34,14 @@ h3 {
 }
 
 .info_text dt{
-    background-color: #ffc3c3;
+    background-color: rgb(221, 208, 27);
     line-height: 2em;
     display: inline-block;
     padding: 0 10px;
-    border-radius: 15px;
+}
+
+.info_text dd{
+    margin-bottom: 20px;
 }
  /* カード内もっとmi
  るボタン*/
