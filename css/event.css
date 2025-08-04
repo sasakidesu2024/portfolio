@@ -43,8 +43,7 @@ h3 {
 .info_text dd{
     margin-bottom: 20px;
 }
- /* カード内もっとmi
- るボタン*/
+ /* カード内もっとみるボタン*/
 .button_solid017{
     margin: 10px 0 20px 0 ;
 }
@@ -126,6 +125,7 @@ h3 {
 @media screen and (min-width: 768px) {
     .info_card{
         width: 45%;
+      
     }
     
 }
