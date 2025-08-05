@@ -93,11 +93,12 @@ h3 {
    .event_container{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-around;
     
 }
     .event_info li{
          width: 45%;
+         height: 100%;
 
     }
 
