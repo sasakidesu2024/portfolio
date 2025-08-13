@@ -146,6 +146,10 @@ h3 {
     }
 }
 
+.info_list{
+    margin-top: 25px;
+}
+
 h4{
     font-size: 20px;
     text-align: center;
