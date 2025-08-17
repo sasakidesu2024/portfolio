@@ -53,7 +53,8 @@ h3 {
 .button_solid017 a {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     max-width: 240px;
@@ -93,7 +94,7 @@ h3 {
    .event_container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
 }
     .event_info li{
@@ -112,6 +113,74 @@ h3 {
 
     }
 
+}
+
+
+/*---------event imgとﾃｷｽﾄつくる----------*/
+
+.btn_img{
+    width: 100px;
+    background-color: #543618;
+    margin-right: 50px;
+
+    }
+
+.event_info2{
+    border: #c21313 solid;
+    
+         
+}
+
+.event_list{
+    background-color: #ffc3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #000066;;
+}
+
+
+/* ボタンのスタイル */
+
+.btn a {
+  position: relative;
+ width: 300px;
+  padding: 15px 20px;
+  background-color: #21be78;
+  /*border-radius: 8px;*/
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* アイコンのスタイル */
+.btn-circle-right a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.btn-circle-right a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 6px solid transparent;
+  border-right: 0 solid transparent;
+  border-left: 9px solid #c21313;
+  border-bottom: 6px solid transparent;
+  box-sizing: border-box;
 }
 
 
