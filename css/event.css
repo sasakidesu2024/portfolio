@@ -96,19 +96,23 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-evenly;    
 }
-}
-    .event_info li{
+   .event_info li{
          width: 45%;
          height: 100%;
 
-    }   
+    }
+}
+ 
 
 @media screen and (min-width: 1000px) {
 
-    .event_info li{
-         width: 30%;
+ 
 
-    }
+   .event_info li{
+         width: 30%;
+         height: 100%;
+
+    } 
 
 }
 
