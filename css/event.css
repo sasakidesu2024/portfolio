@@ -99,8 +99,8 @@ h3 {
 .event_info2{
     background-color: #f3ecec;
     border-radius: 10px;
-    padding: 10px;  
-    
+    padding: 10px;   
+    justify-content: center;
 }
 
 .event_list{
@@ -167,7 +167,7 @@ h3 {
 
 /*------pc-----*/
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 680px) {
    .event_container{
     display: flex;
     flex-wrap: wrap;
@@ -181,8 +181,9 @@ h3 {
     .event_info2{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 50px;
+        gap: 20px 30px;
+        
+        
 
 }
 }
