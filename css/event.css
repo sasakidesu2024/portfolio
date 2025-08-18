@@ -115,13 +115,13 @@ h3 {
 .btn a {
     position: relative;
     min-width: 280px;
-    padding: 15px 20px;
+    padding: 10px 15px;
     background-color: #21be78;
   /*border-radius: 8px;*/
     color: #fff;
     text-decoration: none;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 /* アイコンのスタイル */
