@@ -262,7 +262,8 @@ dt{
 
 
 
-/*▼見やすくするためのスタイルです*/
+/*------------立体ボタン黄色-----------*/
+
 .btn{
   max-width:210px;
   width: 100%;
@@ -280,7 +281,6 @@ dt{
 .btn:hover{
   opacity:0.8;
 }
-/*▲見やすくするためのスタイルです*/
 
 /*凸ボタン*/
 .btn__border-outset{
@@ -293,5 +293,126 @@ dt{
 .btn-container{
     display: flex;
     gap: 20px;
+    margin: 10px 0;
+}
+
+
+/*---------グレーボタン--------------*/
+
+.button003 a {
+    background: #eee;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+   
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button003 a:hover {
+    background: #313131;
+    color: #FFF;
+}
+.button003 a:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button003 a:hover:after {
+    border-color: #FFF;
+}
+
+
+
+/*---------外部に飛ぶマーク付き--------------*/
+
+.after_icon{
+    display: block;
+    max-width: 200px;
+    text-decoration: underline;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    right: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+ 
+    padding: 5px 0;
+}
+
+.after_icon::after{
+    content: url(../img/linkmark2.png);
+    position: absolute;
     
 }
+
+/*---------------------------------------*/
+/* 008 */
+/*グレーからブルーにフォバーで　ボタン*/
+.button008 a {
+    background: #eee;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    z-index:0;
+}
+.button008 a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #6bb6ff;
+    transition: .3s;
+    left:0;
+}
+.button008 a:hover {
+    color: #FFF;
+}
+.button008 a:hover:before {
+    width: 100%;
+    z-index: -1;
+}
+
+/*----------------------------------------*/
+/*タイトル水色の影あり枠*/
+
+.box30 {
+    margin: 2em 0;
+    background: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.box30 .box-title {
+    font-size: 1.2em;
+    background: #5fc2f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box30 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
