@@ -312,6 +312,7 @@ dt{
     color: #313131;
     transition: 0.3s ease-in-out;
     font-weight: 500;
+    border-bottom: 4px solid #b02a37; /* 下の枠線を太くして立体感を出す */
 }
 .button003 a:hover {
     background: #313131;
@@ -319,8 +320,8 @@ dt{
 }
 .button003 a:after {
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     border-top: 3px solid #313131;
     border-right: 3px solid #313131;
     transform: rotate(45deg) translateY(-50%);
@@ -416,3 +417,29 @@ dt{
     margin: 0;
 }
 
+
+/**********************/
+
+.table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0 auto;
+    border: #565656 solid 1px;
+    vertical-align: top;
+}
+
+.table th{
+    box-sizing: border-box;
+    padding: 10px;
+    border: yellowgreen solid 1px;
+    background-color: #efefef;
+ 
+}
+
+.table td{
+    box-sizing: border-box;
+    padding: 10px;
+    border: #c21313 solid 1px;
+ 
+}
