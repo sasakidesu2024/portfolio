@@ -170,6 +170,13 @@ h3 {
 }
 
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
 /*------pc-----*/
 
 @media screen and (min-width: 680px) {
@@ -187,10 +194,10 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         gap: 20px 30px;
-        
-        
-
 }
+    .btn-container{
+        justify-content: left;
+    }
 }
  
 
@@ -288,12 +295,6 @@ dt{
   background-color:#f0a340;
   border:5px #ec9e0c;
   border-style:outset;
-}
-
-.btn-container{
-    display: flex;
-    gap: 20px;
-    margin: 10px 0;
 }
 
 
