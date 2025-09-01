@@ -434,7 +434,7 @@ dt{
     padding: 10px;
     border: yellowgreen solid 1px;
     background-color: #efefef;
- 
+    
 }
 
 .table td{
@@ -442,4 +442,14 @@ dt{
     padding: 10px;
     border: #c21313 solid 1px;
  
+}
+
+.th_1 {
+    width: 30%;
+    background-color: #ec9e0c;
+
+}
+
+.th_2{
+    width: 30%;
 }
