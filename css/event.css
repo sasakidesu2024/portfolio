@@ -241,6 +241,11 @@ h3 {
     .info_card{
         width: 45%;     
     }
+
+    .table tr, .table td {
+      display: block;
+
+    }
 }
 
 .info_list{
@@ -306,14 +311,14 @@ dt{
     position: relative;
     display: flex;
     justify-content: space-around;
-   
     margin: 0 auto;
-    max-width: 260px;
     padding: 10px 25px;
     color: #313131;
     transition: 0.3s ease-in-out;
     font-weight: 500;
     border-bottom: 4px solid #b02a37; /* 下の枠線を太くして立体感を出す */
+    height: 100px;
+    align-items: center; 
 }
 .button003 a:hover {
     background: #313131;
@@ -336,8 +341,6 @@ dt{
     border-color: #FFF;
 }
 
-
-
 /*---------外部に飛ぶマーク付き--------------*/
 
 .after_icon{
@@ -359,6 +362,15 @@ dt{
     position: absolute;
     
 }
+
+.after_icon2{
+    text-decoration: underline;
+}
+
+.after_icon2 img{
+    width: 20px;
+}
+
 
 /*---------------------------------------*/
 /* 008 */
@@ -453,4 +465,9 @@ dt{
 
 .th_2{
     width: 30%;
+}
+
+
+@media screen {
+    
 }
