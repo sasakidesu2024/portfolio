@@ -472,72 +472,38 @@ dt{
 }
 
 /*ためし*/
-body {
-  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 40px;
-}
 
-/* --- 月ラベル --- */
-.month {
-  margin-bottom: 40px;
-  position: relative;
-}
 
-.month-label {
-  display: inline-block;
-  background-color: #ffd700;
-  color: #333;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  font-weight: bold;
-  font-size: 1.2em;
-  position: absolute;
-  left: -80px;
-  top: 10px;
-}
-
-.month-label.yellow {
-  background-color: #ffeb3b;
-}
-
-/* --- イベントカード --- */
+/* --- イベントカード全体 --- */
 .event {
-  background-color: #fff;
-  border: 2px solid #bbb;
-  margin-left: 50px;
-  margin-top: 25px;
-  border-radius: 8px;
   display: flex;
-  flex-direction: row;
-  align-items: stretch; /* 縦線を上下に伸ばす */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  overflow: hidden; /* ←上下のはみ出し防止＋線を端まで */
-  opacity: 0;
+  border: 2px solid #bbb;
+  border-radius: 12px;            /* 🎨 角を丸く */
+  overflow: hidden;               /* 丸みに沿って中身をクリップ */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+  opacity: 0;                     /* アニメーション前は非表示 */
   transform: translateY(20px);
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.8s ease-out forwards;  /* ✨ ふわっと登場 */
 }
 
-/* --- 日付ブロック --- */
-.date {
-  text-align: center;
-  width: 100px;
+/* --- 日付ボックス --- */
+.date-box {
+  width: 120px;
   flex-shrink: 0;
+  text-align: center;
+  background-color: #fafafa;
+  border-right: 2px solid #bbb;   /* 区切り線 */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fafafa;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .day {
   font-size: 1.8em;
   font-weight: bold;
-  display: block;
 }
 
 .weekday {
@@ -545,36 +511,36 @@ body {
   color: #666;
 }
 
-/* --- 区切り線（上下いっぱいに） --- */
-.divider {
-  width: 2px;
-  background-color: #999;
-  margin: 0;
-  align-self: stretch; /* ←上下いっぱいに伸ばす */
-}
-
-/* --- 詳細 --- */
-.details {
+/* --- 詳細ボックス --- */
+.details-box {
   flex: 1;
-  padding: 15px 20px;
+  padding: 20px;
 }
 
-.details h3 {
+.details-box h3 {
   color: #0044aa;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 
-.details ul {
+.details-box ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.details li {
-  font-size: 0.9em;
+.details-box li {
   margin-bottom: 6px;
+  font-size: 0.95em;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 6px;
+  display: inline-block;
+  min-width: 90px;
+  color: #333;
 }
 
 /* --- アニメーション --- */
@@ -589,10 +555,8 @@ body {
   }
 }
 
-/* --- 遅延表示 --- */
-.event:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.event:nth-child(3) {
-  animation-delay: 0.4s;
-}
+/* --- 連続アニメーションの遅延 --- */
+.event:nth-child(1) { animation-delay: 0s; }
+.event:nth-child(2) { animation-delay: 0.2s; }
+.event:nth-child(3) { animation-delay: 0.4s; }
+
