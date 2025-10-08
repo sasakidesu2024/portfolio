@@ -471,7 +471,128 @@ dt{
     width: 30%;
 }
 
+/*ためし*/
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 40px;
+}
 
-@media screen {
-    
+/* --- 月ラベル --- */
+.month {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.month-label {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 1.2em;
+  position: absolute;
+  left: -80px;
+  top: 10px;
+}
+
+.month-label.yellow {
+  background-color: #ffeb3b;
+}
+
+/* --- イベントカード --- */
+.event {
+  background-color: #fff;
+  border: 2px solid #bbb;
+  margin-left: 50px;
+  margin-top: 25px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* 縦線を上下に伸ばす */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* ←上下のはみ出し防止＋線を端まで */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* --- 日付ブロック --- */
+.date {
+  text-align: center;
+  width: 100px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 10px 0;
+}
+
+.day {
+  font-size: 1.8em;
+  font-weight: bold;
+  display: block;
+}
+
+.weekday {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* --- 区切り線（上下いっぱいに） --- */
+.divider {
+  width: 2px;
+  background-color: #999;
+  margin: 0;
+  align-self: stretch; /* ←上下いっぱいに伸ばす */
+}
+
+/* --- 詳細 --- */
+.details {
+  flex: 1;
+  padding: 15px 20px;
+}
+
+.details h3 {
+  color: #0044aa;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details li {
+  font-size: 0.9em;
+  margin-bottom: 6px;
+}
+
+/* --- アニメーション --- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- 遅延表示 --- */
+.event:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.event:nth-child(3) {
+  animation-delay: 0.4s;
 }
