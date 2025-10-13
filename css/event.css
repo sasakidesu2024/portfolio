@@ -561,5 +561,5 @@ body {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
- opacity: 0.5;
+  background-color: transparent;
 }
