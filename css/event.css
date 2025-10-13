@@ -560,6 +560,11 @@ body {
   background-image: url(../img/test.png);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 50% auto;
+  background-size: 100% auto;
   background-color: transparent;
+}
+
+.main{
+
+    background: rgba(255,255,255,0.5); 
 }
