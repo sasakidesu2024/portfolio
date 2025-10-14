@@ -555,7 +555,7 @@ dt{
   }
 }
 
-
+/*
 body {
   background-image: url(../img/test.png);
   background-position: right bottom;
@@ -563,4 +563,38 @@ body {
   background-size: 40% auto;
      background-color: rgba(255,255,255,0.5);
 
+}*/
+
+
+/* 親*/
+.decoration {
+	position: relative;
+}
+
+.decoration-in {
+	position: absolute;
+	top: -5px;
+	right: -10px;
+}
+
+/* キャラの基本設定 */
+.decoration-in img {
+	width: 100px;
+	height: auto;
+}
+
+@media screen and (min-width:768px) {
+	.decoration-in {
+		position: absolute;
+		top: 0px;
+		right: -70px;
+		z-index: -1;
+	}
+
+	/* キャラの基本設定 */
+	.decoration-in img {
+		width: 1000px;
+		height: auto;
+		opacity: 0.2;
+	}
 }
