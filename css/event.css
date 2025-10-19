@@ -574,14 +574,15 @@ body {
 	.layer-in {
 		position: absolute;
 		top:700px;
-		right: -50%;
+		right: -500px;
+        z-index: -1;
    
 		
 	}
 
 	/* キャラの基本設定 */
 	.layer-in img {
-		width: 1000px;
+		width: 740px;
 		height: auto;
 		opacity: 0.5;
 	}
