@@ -567,20 +567,24 @@ body {
 
 
 /* 親*/
-.decoration {
+.layer {
 	position: relative;
 }
 
-	.decoration-in {
+	.layer-in {
 		position: absolute;
-		top: 0px;
-		right: -70px;
+		top:700px;
+		right: -50%;
+        overflow: hidden;
 		z-index: -1;
 	}
 
 	/* キャラの基本設定 */
-	.decoration-in img {
+	.layer-in img {
 		width: 1000px;
 		height: auto;
-		opacity: 0.2;
+		opacity: 0.5;
 	}
+
+
+
