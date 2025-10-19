@@ -574,7 +574,7 @@ body {
 	.layer-in {
 		position: absolute;
 		top:700px;
-		right: -500px;
+		right: 300px;
         z-index: -1;
    
 		
