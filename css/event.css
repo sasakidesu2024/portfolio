@@ -573,10 +573,8 @@ body {
 
 	.layer-in {
 		position: absolute;
-		top:700px;
-		right: 500px;
-        z-index: -1;
-   
+	
+        object-fit: cover;
 		
 	}
 
@@ -584,6 +582,7 @@ body {
 	.layer-in img {
 		width: 740px;
 		height: auto;
+        object-position: top 200px right -200px;
 		opacity: 0.5;
 	}
 
