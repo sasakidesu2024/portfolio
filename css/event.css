@@ -830,10 +830,10 @@ body {
 
 .usagi8 {
   background-image: url("../img/test.png");
-  animation-delay: 1.5s, 10s;
+  animation-delay: 0s, 8s;
 }
 
 .usagi9 {
   background-image:url("../img/test.png");
-  animation-delay: 3s, 20s;
+  animation-delay: 0s, 16s;
 }
