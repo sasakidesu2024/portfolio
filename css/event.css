@@ -605,33 +605,40 @@ body {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background: #e8f9ff; /* 背景色は任意で変更可 */
+  background: linear-gradient(to top, #e8f9ff 70%, #ffffff); /* 柔らかい背景 */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ふわふわ揺れるアニメーション */
+/* タイトル部分 */
+.usagi-title {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  font-weight: bold;
+  color: #f08080;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  letter-spacing: 4px;
+  background-color: yellow;
+  z-index: 2;
+}
+
+/* --- ふわふわ揺れる --- */
 @keyframes fuwafuwa {
-  0% {
-    transform: translate(0, 0) rotate(-7deg);
-  }
-  50% {
-    transform: translate(0, -10px) rotate(0deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(7deg);
-  }
+  0% { transform: translate(0, 0) rotate(-7deg); }
+  50% { transform: translate(0, -10px) rotate(0deg); }
+  100% { transform: translate(0, 0) rotate(7deg); }
 }
 
-/* 右から左へ移動するアニメーション */
+/* --- 右から左へ移動 --- */
 @keyframes moveLeft {
-  0% {
-    right: -100px;
-  }
-  100% {
-    right: 110%;
-  }
+  0% { right: -120px; }
+  100% { right: 120%; }
 }
 
-/* 共通のうさぎ設定 */
+/* --- 共通設定 --- */
 .usagi {
   position: absolute;
   bottom: 20px;
@@ -640,23 +647,25 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  animation: fuwafuwa 3s ease-in-out infinite alternate, moveLeft 15s linear infinite;
+  animation: fuwafuwa 3s ease-in-out infinite alternate,
+             moveLeft 25s linear infinite;
 }
 
 /* --- 各うさぎ --- */
 .usagi1 {
   background-image: url("../img/test.png");
   animation-delay: 0s, 0s;
+  bottom: 30px;
 }
 
 .usagi2 {
   background-image: url("../img/test.png");
-  animation-delay: 1s, 3s;
-  bottom: 50px;
+  animation-delay: 1.5s, 8s;
+  bottom: 60px;
 }
 
 .usagi3 {
   background-image: url("../img/test.png");
-  animation-delay: 2s, 6s;
-  bottom: 80px;
+  animation-delay: 3s, 16s;
+  bottom: 90px;
 }
