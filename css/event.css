@@ -589,6 +589,9 @@ body {
 	}
 */
 
+
+/*ふわふわだけ*/
+
 .fuwafuwa5 {
   animation: fuwafuwa 3s ease-in-out infinite alternate;
   background: url(../img/test.png) no-repeat center center / 60px auto;
@@ -600,7 +603,10 @@ body {
 }
 
 
-.usagi-area {
+
+
+
+.usagi-area22 {
   position: relative;
   width: 100%;
   height: 200px;
@@ -610,7 +616,7 @@ body {
 }
 
 /* タイトル部分 */
-.usagi-title {
+.usagi-title22 {
   position: absolute;
   left: 30px;
   top: 50%;
@@ -637,8 +643,10 @@ body {
   100% { right: 120%; }
 }
 
-/* --- 共通設定 --- */
-.usagi {
+
+
+/* --- 共通画像設定 --- */
+.usagi22 {
   position: absolute;
   bottom: 20px;
   width: 70px;
@@ -670,7 +678,9 @@ body {
 }
 
 
-.usagi-area2 {
+
+
+.usagi-area33 {
   position: relative;
   width: 100%;
   height: 200px;
@@ -682,13 +692,13 @@ body {
 }
 
 /* 🎀 タイトル（10月） */
-.usagi-title {
+.usagi-title33 {
   flex: 0 0 100px; /* ← タイトルエリアの幅 */
   text-align: center;
   z-index: 2;
 }
 
-.usagi-title span {
+.usagi-title33 span {
   display: inline-block;
   font-size: 48px;
   font-weight: bold;
@@ -698,8 +708,8 @@ body {
   border-radius: 16px;
 }
 
-/* 🐇 うさぎたちの表示エリア（タイトル右側だけ） */
-.usagi-zone {
+/* 🐇 画像たちの表示エリア（タイトル右側だけ） */
+.usagi-zone33 {
   position: relative;
   flex: 1;
   height: 100%;
@@ -719,7 +729,7 @@ body {
   100% { left: -120px; } /* うさぎが左端（usagi-zoneの端）で消える */
 }
 
-.usagi {
+.usagi33 {
   position: absolute;
   bottom: 20px;
   width: 70px;
@@ -731,7 +741,7 @@ body {
              moveLeft 25s linear infinite;
 }
 
-/* --- 各うさぎ --- */
+/* --- 各画像 --- */
 .usagi4 {
   background-image: url("../img/test.png");
   animation-delay: 0s, 0s;
@@ -751,8 +761,11 @@ body {
 }
 
 
+
+
+
 /* 全体の枠 */
-.usagi-container {
+.usagi-container44 {
   position: relative;
   display: flex;
   align-items: center;
@@ -767,7 +780,7 @@ body {
 }
 
 /* タイトル部分（左側） */
-.usagi-title3 {
+.usagi-title44 {
   flex: 0 0 160px;
   text-align: center;
   font-size: 36px;
@@ -778,7 +791,7 @@ body {
 }
 
 /* タイトルの立体枠 */
-.usagi-title3 span {
+.usagi-title44 span {
   display: inline-block;
   padding: 10px 30px;
   background: linear-gradient(to bottom, #ffb347, #ff7b00);
@@ -789,15 +802,15 @@ body {
 }
 
 /* うさぎが動くエリア（右側） */
-.usagi-zone3 {
+.usagi-zone44 {
   flex: 1;
   position: relative;
   height: 100%;
   overflow: hidden;
 }
 
-/* --- 共通うさぎ設定 --- */
-.usagi6 {
+/* --- 共通画像　ふわふわの場合 ---
+.usagi44{
   position: absolute;
   bottom: 20px;
   width: 70px;
@@ -806,15 +819,40 @@ body {
   background-position: center;
   background-size: contain;
   animation: fuwafuwa 3s ease-in-out infinite alternate,
-             moveLeft 25s linear infinite;
+             moveLeft 40s linear infinite;
 }
 
-/* ふわふわ動作 */
+ */
+
+/* ふわふわ動作 
 @keyframes fuwafuwa {
   0%   { transform: translateY(0) rotate(-6deg); }
   50%  { transform: translateY(-6px) rotate(0deg); }
   100% { transform: translateY(0) rotate(6deg); }
+}*/
+
+
+/* --- 共通画像 回転の場合 --- */
+.usagi44 {
+  position: absolute;
+  bottom: 20px;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: kurukuru 5s linear infinite,  /* ← 回転 */
+             moveLeft 25s linear infinite; /* ← 横移動 */
 }
+
+
+/* --- 回転アニメーション --- */
+@keyframes kurukuru {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 
 /* 右→左への移動（タイトル右側だけで） */
 @keyframes moveLeft {
@@ -830,10 +868,20 @@ body {
 
 .usagi8 {
   background-image: url("../img/test.png");
-  animation-delay: 0s, 8s;
+  animation-delay: 0s, 15;
 }
 
 .usagi9 {
   background-image:url("../img/test.png");
-  animation-delay: 0s, 16s;
+  animation-delay: 0s, 30s;
 }
+
+
+
+
+/* --- 横移動 --- */
+@keyframes moveLeft {
+  0%   { left: 100%; }
+  100% { left: -80px; }
+}
+
