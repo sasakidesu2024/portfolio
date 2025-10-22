@@ -555,6 +555,8 @@ dt{
   }
 }
 
+
+
 /*
 body {
   background-image: url(../img/test.png);
@@ -564,9 +566,9 @@ body {
      background-color: rgba(255,255,255,0.5);
 
 }*/
+/*ひよこを背景に*/
 
-
-/* 親*/
+/* 親
 .layer {
 	position: relative;
 }
@@ -578,13 +580,83 @@ body {
      
 	}
 
-	/* キャラの基本設定 */
+	/* キャラの基本設定 
 	.layer-in img {
 		width: 500px;
 		height: auto;
         
 		opacity: 0.5;
 	}
+*/
+
+.fuwafuwa5 {
+  animation: fuwafuwa 3s ease-in-out infinite alternate;
+  background: url(../img/test.png) no-repeat center center / 60px auto;
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+}
 
 
+.usagi-area {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #e8f9ff; /* 背景色は任意で変更可 */
+}
 
+/* ふわふわ揺れるアニメーション */
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform: translate(0, -10px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(7deg);
+  }
+}
+
+/* 右から左へ移動するアニメーション */
+@keyframes moveLeft {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 110%;
+  }
+}
+
+/* 共通のうさぎ設定 */
+.usagi {
+  position: absolute;
+  bottom: 20px;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: fuwafuwa 3s ease-in-out infinite alternate, moveLeft 15s linear infinite;
+}
+
+/* --- 各うさぎ --- */
+.usagi1 {
+  background-image: url("../img/test.png");
+  animation-delay: 0s, 0s;
+}
+
+.usagi2 {
+  background-image: url("../img/test.png");
+  animation-delay: 1s, 3s;
+  bottom: 50px;
+}
+
+.usagi3 {
+  background-image: url("../img/test.png");
+  animation-delay: 2s, 6s;
+  bottom: 80px;
+}
