@@ -715,11 +715,10 @@ body {
 
 /* --- 右から左へ移動 --- */
 @keyframes moveLeft {
-  0% { right: -100px; }
-  100% { right: 100%; }
+  0% { left: 100%; }    /* エリアの右外から出発 */
+  100% { left: -120px; } /* うさぎが左端（usagi-zoneの端）で消える */
 }
 
-/* --- 共通設定 --- */
 .usagi {
   position: absolute;
   bottom: 20px;
