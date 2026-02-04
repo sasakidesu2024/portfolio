@@ -885,3 +885,91 @@ body {
   100% { left: -80px; }
 }
 
+/**********************/
+/* スライダーの枠 */
+.slider {
+  position: relative;
+  width: 520px;
+  height: 350px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000; /* 背景確認用。削除可 */
+}
+
+/* 画像共通設定 */
+.slider img {
+  position: absolute;
+  width: 100px;
+  
+  object-fit: cover;
+  opacity: 0;
+  animation: slideFadeRightToLeft 18s ease-in-out infinite;
+}
+
+/* 各画像の開始タイミング */
+.slider img:nth-child(1) { animation-delay: 0s; }
+.slider img:nth-child(2) { animation-delay: 6s; }
+.slider img:nth-child(3) { animation-delay: 12s; }
+
+/* 💨 右から左へ、左端「枠内」でふわっと消える */
+@keyframes slideFadeRightToLeft {
+  0%   { transform: translateX(550px); opacity: 0; }   /* 枠外（右）で透明 */
+  10%  { transform: translateX(0);     opacity: 1; }   /* 枠中央に入りながら表示 */
+  70%  { transform: translateX(-200px); opacity: 1; }  /* 枠の左寄りまで移動 */
+  85%  { transform: translateX(-300px); opacity: 0.5; }/* 左端“の中”で薄くなる */
+  95%  { transform: translateX(-400px); opacity: 0; }  /* 枠内ギリギリで完全に消える */
+  100% { transform: translateX(-400px); opacity: 0; }  /* 消えたまま終了 */
+}
+
+
+
+/* 表示枠 */
+.slider-wrapper5 {
+  position: relative;
+  width: 520px;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+/* 共通スタイル */
+.slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: slideMove 9s linear infinite;
+}
+
+/* 個別設定（幅と遅延時間） */
+.img1 { width: 65px;  animation-delay: 0s; }
+.img2 { width: 99px;  animation-delay: 3s; }
+.img3 { width: 96px;  animation-delay: 6s; }
+
+/* 共通アニメーション */
+@keyframes slideMove {
+  0%   { left: 520px;  opacity: 0; }   /* 右の外から登場 */
+  10%  { opacity: 1; }                 /* ふわっと現れる */
+  40%  { left: 200px; opacity: 1; }    /* 中央あたり */
+  70%  { left: -100px; opacity: 1; }   /* 左へ移動 */
+  90%  { opacity: 0; }                 /* ふわっと消える */
+  100% { left: -150px; opacity: 0; }   /* 左の外でリセット */
+}
+
+.timehyo{
+  margin: 30px auto;
+  text-align: center;
+}
+
+.timehyo img{
+  max-width: 400px;
+  padding:10px;
+}
+
+.title_time{
+  background-color: #5fc2f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
