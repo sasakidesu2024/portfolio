@@ -973,3 +973,9 @@ body {
   margin-bottom: 20px;
 }
 
+
+/*詳細画面の画像をクリックで大きくする試し*/
+
+.tirashii2 img{
+  max-width: 300px;
+}
