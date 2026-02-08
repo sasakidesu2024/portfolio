@@ -984,6 +984,10 @@ body {
   margin-bottom: 20px;
 }
 
+
+.img-wrap{
+  max-width: 300px;
+}
 /* PCサイズのみ有効 */
 @media (min-width: 768px) {
 
