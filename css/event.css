@@ -984,27 +984,21 @@ body {
   margin-bottom: 20px;
 }
 
+/* SP */
+@media (max-width: 767px) {
+  a[data-lightbox] {
+    pointer-events: none;
+  }
 
-.checkbox img{
-  max-width: 300px;
+  .tirashii2 img {
+    width: 100%;
+    max-width: 100%;
+  }
 }
-/* PCサイズのみ有効 */
+
 @media (min-width: 768px) {
-
-  .img-wrap {
-    cursor: zoom-in;
-  }
-
-  .img-wrap input {
-    display: none;
-  }
-
-  .img-wrap img {
-    transition: transform 0.3s ease;
-  }
-
-  .img-wrap input:checked + img {
-    transform: scale(2.2);
-    cursor: zoom-out;
+  a[data-lightbox] {
+    pointer-events: auto;
   }
 }
+
