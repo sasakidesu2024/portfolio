@@ -1004,7 +1004,7 @@ body {
   }
 
   .img-wrap input:checked + img {
-    transform: scale(1.8);
+    transform: scale(2.2);
     cursor: zoom-out;
   }
 }
