@@ -983,3 +983,24 @@ body {
 .ichi{
   margin-bottom: 20px;
 }
+
+/* PCサイズのみ有効 */
+@media (min-width: 768px) {
+
+  .img-wrap {
+    cursor: zoom-in;
+  }
+
+  .img-wrap input {
+    display: none;
+  }
+
+  .img-wrap img {
+    transition: transform 0.3s ease;
+  }
+
+  .img-wrap input:checked + img {
+    transform: scale(1.8);
+    cursor: zoom-out;
+  }
+}
