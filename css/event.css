@@ -1076,39 +1076,7 @@ body {
   max-width: 220px;
   margin: 0 auto;
   
-  /* 縁取り（超重要） */
-text-shadow:
-  -2px -2px 0 #000,
-   2px -2px 0 #000,
-  -2px  2px 0 #000,
-   2px  2px 0 #000,
-   0px -2px 0 #000,
-   0px  2px 0 #000,
-  -2px  0px 0 #000,
-   2px  0px 0 #000;
-
-     text-shadow:
-    -2px -2px 0 #000,
-    -1px -2px 0 #000,
-     0px -2px 0 #000,
-     1px -2px 0 #000,
-     2px -2px 0 #000,
-
-    -2px -1px 0 #000,
-     2px -1px 0 #000,
-
-    -2px  0px 0 #000,
-     2px  0px 0 #000,
-
-    -2px  1px 0 #000,
-     2px  1px 0 #000,
-
-    -2px  2px 0 #000,
-    -1px  2px 0 #000,
-     0px  2px 0 #000,
-     1px  2px 0 #000,
-     2px  2px 0 #000
-   
+text-shadow: 3px 3px 3px #000, -3px -3px 3px #000, -3px 3px 3px #000, 3px -3px 3px #000, 3px 0px 3px #000, -3px -0px 3px #000, 0px 3px 3px #000, 0px -3px 3px #000;
 }
 
 .btn_top:active {
