@@ -1003,3 +1003,141 @@ body {
   }
 }
 
+
+/*三角形の試し*/
+
+/* 右三角形 */
+.triangle-right::before {
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+/* 共通のスタイル */
+.triangle {
+  display: inline-block;
+  position: relative;
+}
+.triangle::before {
+  background-color: #333;
+  bottom: 0;
+  content: "";
+  height: 20px;
+  margin: auto;
+  position: absolute;
+  right: -30px;
+  top: 0;
+  width: 20px;
+}
+
+.container2{
+  display: flex;
+ 
+}
+.triangle2{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #555555;
+  border-right: 0;
+  margin-left: 3px;
+}
+
+.btn-wrap1 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 15px 0 20px;
+  max-width: 760px;
+  
+}
+
+/* 共通ボタン */
+.btn_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ← 縦中央 */
+  align-items: center;     /* ← 横中央 */
+
+  width: 45%;
+  height: 100px; 
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 5px 5px 5px #aaa;
+  transition: 0.2s;
+}
+
+/* テキスト共通 */
+.btn_top span {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  
+  /* 縁取り（超重要） */
+text-shadow:
+  -2px -2px 0 #000,
+   2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000,
+   0px -2px 0 #000,
+   0px  2px 0 #000,
+  -2px  0px 0 #000,
+   2px  0px 0 #000;
+}
+
+.btn_top:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.4);
+}
+/* pinkボタン */
+.pink {
+  background: linear-gradient(135deg, #ff7b7b, #dcdcdc);
+}
+
+/* greenボタン */
+.green {
+  background: linear-gradient(135deg, #00ff00, #dcdcdc);
+}
+
+
+/* サイズ調整 */
+.small_btn1 {
+  font-size: 14px;
+}
+
+.main_btn1 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.sub_btn1 {
+  font-size: 18px;
+}
+
+.left1 {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right1{
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .btn_top span {
+    max-width: 180px; /* ← 少し縮める */
+  }
+
+  .btn_top {
+    padding: 15px 10px; /* ← 余白も詰める */
+  }
+}
